@@ -24,7 +24,8 @@ export const FlexContainer = styled.div`
 	flex-direction: ${({ direction }) => direction};
 
 	& > div {
-		flex: ${({ fullWidthChild }) => fullWidthChild};
+		flex: ${({ fullWidthChild }) => fullWidthChild}
+		
 	}
 `;
 
