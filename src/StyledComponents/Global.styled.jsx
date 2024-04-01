@@ -24,8 +24,7 @@ export const FlexContainer = styled.div`
 	flex-direction: ${({ direction }) => direction};
 
 	& > div {
-		flex: ${({ fullWidthChild }) => fullWidthChild}
-		
+		flex: ${({ fullWidthChild }) => fullWidthChild};
 	}
 `;
 
@@ -55,6 +54,8 @@ export const BlueText = styled.span`
 export const ParaText = styled(PaddingContainer)`
 	color: ${({ theme }) => theme.colors.para_text_color};
 	line-height: 2rem;
+	text-align: justify;
+	max-width: 70%;
 `;
 
 export const IconContainer = styled.div`
