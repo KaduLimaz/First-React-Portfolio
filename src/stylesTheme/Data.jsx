@@ -1,5 +1,6 @@
 import { FaReact, FaNode, FaCss3 } from "react-icons/fa";
 import { SiJavascript, SiTypescript } from "react-icons/si";
+import Project1 from "../assets/API_rick.png";
 
 export const Skills = [
 	{
@@ -27,5 +28,18 @@ export const Skills = [
 		id: 5,
 		tech: "TypeScript",
 		icon: <SiTypescript />,
+	},
+];
+
+export const projectDetails = [
+	{
+		id: 0,
+		project_name: "API Rick-Morty",
+		project_desc:
+			"A API do Rick and Morty fornece informações sobre personagens, episódios e locais da série de animação Rick and Morty. Este projeto demonstra como fazer solicitações à API utilizando Axios e processar os dados retornados.",
+		tech_stacks: ["JavaScript", "CSS", "HTML", "Axios"],
+		project_img: Project1,
+		project_url: "https://front-end-iii-ativiade-final.vercel.app/",
+		reverse: false,
 	},
 ];

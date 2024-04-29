@@ -43,14 +43,14 @@ export const MySkills = () => {
 					</Heading>
 
 					<ParaText top="2rem" bottom="1.5rem">
-						Estou buscando um Estágio em Programação onde possa aplicar minhas
-						habilidades em JavaScript e TypeScript para contribuir com o
-						desenvolvimento de software inovador e de alta qualidade. Possuo
-						conhecimento sólido de ambas as linguagens, incluindo seus
-						principais conceitos, frameworks e ferramentas. Sou um profissional
-						dedicado, proativo e com grande capacidade de aprendizado, além de
-						ter forte interesse em trabalhar em equipe e colaborar com outros
-						desenvolvedores.
+						Estou buscando uma oportunidade na área da Programação onde possa
+						aplicar minhas habilidades em JavaScript e TypeScript para
+						contribuir com o desenvolvimento de software inovador e de alta
+						qualidade. Possuo conhecimento sólido de ambas as linguagens,
+						incluindo seus principais conceitos, frameworks e ferramentas. Sou
+						um profissional dedicado, proativo e com grande capacidade de
+						aprendizado, além de ter forte interesse em trabalhar em equipe e
+						colaborar com outros desenvolvedores.
 					</ParaText>
 				</div>
 			</FlexContainer>
