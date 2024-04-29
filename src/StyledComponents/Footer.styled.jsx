@@ -7,6 +7,7 @@ export const ContactForm = styled.form`
 export const FormLabel = styled.p`
 	color: ${({ theme }) => theme.colors.para_text_color};
 	padding-bottom: 10px;
+	text-align: justify;
 `;
 
 export const FormInput = styled.input`
@@ -15,7 +16,8 @@ export const FormInput = styled.input`
 	border: 1px solid ${({ theme }) => theme.colors.para_text_color};
 	color: ${({ theme }) => theme.colors.para_text_color};
 	border-radius: 5px;
-	padding: 15px;
+	padding: ${({ padding }) => padding};
+	
 
 	&::placeholder {
 		color: ${({ theme }) => theme.colors.para_text_color} !important;

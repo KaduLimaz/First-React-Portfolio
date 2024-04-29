@@ -4,10 +4,8 @@ import {
 	FlexContainer,
 	Heading,
 	PaddingContainer,
-	ParaText,
 	BlueText,
-	IconContainer,
-	LinkStyled,
+	Button,
 } from "../StyledComponents/Global.styled";
 
 //import Footer Styles
@@ -33,8 +31,33 @@ export const Footer = () => {
 					<ContactForm>
 						<PaddingContainer bottom="2rem">
 							<FormLabel>Name</FormLabel>
-							<FormInput type="text" placeholder="Enter your name"></FormInput>
+							<FormInput
+								type="text"
+								placeholder="Enter your name"
+								padding="10px"
+							></FormInput>
 						</PaddingContainer>
+
+						<PaddingContainer bottom="2rem">
+							<FormLabel>Email</FormLabel>
+							<FormInput
+								type="email"
+								placeholder="Enter your email"
+								padding="10px"
+							></FormInput>
+						</PaddingContainer>
+
+						<PaddingContainer bottom="2rem">
+							<FormLabel>Message</FormLabel>
+							<FormInput
+								as="textarea"
+								placeholder="Enter your message"
+								padding="20px"
+							></FormInput>
+						</PaddingContainer>
+						<FlexContainer justify="center">
+							<Button>Send Message</Button>
+						</FlexContainer>
 					</ContactForm>
 				</FlexContainer>
 			</PaddingContainer>
