@@ -32,7 +32,12 @@ export const Project = ({ data }) => {
 					</Heading>
 
 					<IconContainer color="blue" size="2rem">
-						<FaGithub />
+						<a
+							href="https://github.com/KaduLimaz/FrontEnd-III-Ativiade-FInal"
+							target="_blank"
+						>
+							<FaGithub />
+						</a>
 					</IconContainer>
 				</FlexContainer>
 
@@ -46,7 +51,9 @@ export const Project = ({ data }) => {
 				<ParaText top="1.5rem" bottom="2rem">
 					{data.project_desc}
 				</ParaText>
-				<Button>Visit Website</Button>
+				<Button href={data.project_url} target="_blank">
+					Visit Website
+				</Button>
 			</div>
 			{/* --right-section-project-image-- */}
 			<ProjectImageContainer justify="flex-end">
