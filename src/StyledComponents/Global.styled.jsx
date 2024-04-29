@@ -89,3 +89,13 @@ export const Button = styled.a`
 		background-color: ${({ theme }) => theme.colors.white};
 	}
 `;
+
+export const LinkStyled = styled.a`
+	&:active {
+		color: inherit;
+	}
+
+	&:visited {
+		color: inherit;
+	}
+`;

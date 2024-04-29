@@ -6,6 +6,7 @@ import {
 	ParaText,
 	BlueText,
 	IconContainer,
+	LinkStyled,
 } from "../StyledComponents/Global.styled";
 //import react-icons
 import { BsLinkedin, BsInstagram, BsGithub, BsFacebook } from "react-icons/bs";
@@ -46,16 +47,34 @@ export function Showcase() {
 					{/* social-icons */}
 					<FlexContainer gap="20px">
 						<IconContainer color="blue" size="1.5rem">
-							<BsLinkedin />
+							<LinkStyled
+								href="https://www.linkedin.com/in/kadulima01/"
+								target="blank"
+							>
+								<BsLinkedin />
+							</LinkStyled>
 						</IconContainer>
 						<IconContainer color="blue" size="1.5rem">
-							<BsInstagram />
+							<LinkStyled
+								href="https://www.instagram.com/kadulima1/"
+								target="blank"
+							>
+								<BsInstagram />
+							</LinkStyled>
+						</IconContainer>
+
+						<IconContainer color="blue" size="1.5rem">
+							<LinkStyled href="https://github.com/KaduLimaz" target="blank">
+								<BsGithub />
+							</LinkStyled>
 						</IconContainer>
 						<IconContainer color="blue" size="1.5rem">
-							<BsGithub />
-						</IconContainer>
-						<IconContainer color="blue" size="1.5rem">
-							<BsFacebook />
+							<LinkStyled
+								href="https://www.facebook.com/EduuardoLima2/"
+								target="blank"
+							>
+								<BsFacebook />
+							</LinkStyled>
 						</IconContainer>
 					</FlexContainer>
 				</div>

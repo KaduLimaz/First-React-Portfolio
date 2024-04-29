@@ -7,6 +7,7 @@ import {
 	ParaText,
 	IconContainer,
 	Button,
+	LinkStyled,
 } from "../../StyledComponents/Global.styled";
 
 //import assets
@@ -32,12 +33,12 @@ export const Project = ({ data }) => {
 					</Heading>
 
 					<IconContainer color="blue" size="2rem">
-						<a
+						<LinkStyled
 							href="https://github.com/KaduLimaz/FrontEnd-III-Ativiade-FInal"
 							target="_blank"
 						>
 							<FaGithub />
-						</a>
+						</LinkStyled>
 					</IconContainer>
 				</FlexContainer>
 

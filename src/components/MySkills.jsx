@@ -6,6 +6,7 @@ import {
 	ParaText,
 	BlueText,
 	IconContainer,
+	LinkStyled,
 } from "../StyledComponents/Global.styled";
 // import My Skills styles
 import {
@@ -22,9 +23,11 @@ export const MySkills = () => {
 				<SkillsCardContainer>
 					{Skills.map((skill) => (
 						<SkillsCard>
-							<IconContainer size="5rem" color="blue">
-								{skill.icon}
-							</IconContainer>
+							<LinkStyled>
+								<IconContainer size="5rem" color="blue">
+									{skill.icon}
+								</IconContainer>
+							</LinkStyled>
 
 							<Heading as="h4" size="h4">
 								{skill.tech}
