@@ -8,7 +8,14 @@ import { Project } from "./layouts/Project";
 
 export const MyProjects = () => {
 	return (
-		<PaddingContainer id="projects" top="5%" bottom="5%">
+		<PaddingContainer
+			id="projects"
+			top="5%"
+			bottom="5%"
+			responsiveTop="20%"
+			responsiveLeft="1rem"
+			responsiveRight="1rem"
+		>
 			<Heading as="h4" size="h4">
 				MY PROJECTS
 			</Heading>

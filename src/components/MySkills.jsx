@@ -17,8 +17,18 @@ import { Skills } from "../stylesTheme/Data";
 
 export const MySkills = () => {
 	return (
-		<PaddingContainer id="skills" top="10%" bottom="10%">
-			<FlexContainer fullWidthChild>
+		<PaddingContainer
+			id="skills"
+			top="10%"
+			bottom="10%"
+			responsiveLeft="1rem"
+			responsiveRight="1rem"
+		>
+			<FlexContainer
+				fullWidthChild
+				responsiveFlex
+				responsiveDirection="column-reverse"
+			>
 				{/* --left-section-- */}
 				<SkillsCardContainer>
 					{Skills.map((skill) => (

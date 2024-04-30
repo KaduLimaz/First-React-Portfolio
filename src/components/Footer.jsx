@@ -55,7 +55,7 @@ export const Footer = () => {
 								padding="20px"
 							></FormInput>
 						</PaddingContainer>
-						<FlexContainer justify="center">
+						<FlexContainer justify="center" responsiveFlex>
 							<Button>Send Message</Button>
 						</FlexContainer>
 					</ContactForm>

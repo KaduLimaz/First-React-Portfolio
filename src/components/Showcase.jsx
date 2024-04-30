@@ -23,7 +23,16 @@ import BackgroundImg from "../assets/particle.png";
 
 export function Showcase() {
 	return (
-		<PaddingContainer id="Home" left="0.5%" right="10%" top="15%" bottom="10%">
+		<PaddingContainer
+			id="Home"
+			left="0.5%"
+			right="10%"
+			top="15%"
+			bottom="10%"
+			responsiveLeft="1rem"
+			responsiveRight="1rem"
+			responsiveTop="8rem"
+		>
 			<FlexContainer align="left" fullWidthChild>
 				{/* --left-content--  */}
 				<div>
@@ -45,7 +54,7 @@ export function Showcase() {
 						procuro minha primeira oportunidade de estágio.
 					</ParaText>
 					{/* social-icons */}
-					<FlexContainer gap="20px">
+					<FlexContainer gap="20px" responsiveFlex>
 						<IconContainer color="blue" size="1.5rem">
 							<LinkStyled
 								href="https://www.linkedin.com/in/kadulima01/"
