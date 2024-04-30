@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 // import Global Styles
 import {
 	FlexContainer,
@@ -20,6 +22,7 @@ import {
 //import asset
 import ShowcaseImg from "../assets/showcase-img.png";
 import BackgroundImg from "../assets/particle.png";
+import { fadeInLeftVariant, fadeInRightVariant } from "../stylesTheme/Variants";
 
 export function Showcase() {
 	return (
@@ -35,7 +38,11 @@ export function Showcase() {
 		>
 			<FlexContainer align="left" fullWidthChild>
 				{/* --left-content--  */}
-				<div>
+				<motion.div
+					variants={fadeInLeftVariant}
+					initial="hidden"
+					whileInView={"visible"}
+				>
 					<Heading as="h4" size="h4" text-align="left">
 						Olá!
 					</Heading>
@@ -86,13 +93,31 @@ export function Showcase() {
 							</LinkStyled>
 						</IconContainer>
 					</FlexContainer>
-				</div>
-				<FlexContainer justify="flex-end">
+				</motion.div>
+
+				{/* --right-content-- */}
+				<FlexContainer
+					as={motion.div}
+					variants={fadeInRightVariant}
+					initial={"hidden"}
+					whileInView={"visible"}
+					justify="flex-end"
+				>
 					<ShowcaseParticleContainer>
 						<ShowcaseImageCard>
 							<img src={ShowcaseImg} alt="showcase" />
 						</ShowcaseImageCard>
 						<Particle
+							as={motion.img}
+							animate={{
+								x: [0, 100, 0],
+								rotate: 360,
+								scale: [1, 0.5, 1],
+							}}
+							transition={{
+								duration: 20,
+								repeat: Infinity,
+							}}
 							src={BackgroundImg}
 							alt="particle"
 							top="-80px"
@@ -100,6 +125,16 @@ export function Showcase() {
 							transform="60"
 						/>
 						<Particle
+							as={motion.img}
+							animate={{
+								y: [0, 100, 0],
+								rotate: 360,
+								scale: [1, 0.8, 1],
+							}}
+							transition={{
+								duration: 18,
+								repeat: Infinity,
+							}}
 							src={BackgroundImg}
 							alt="particle"
 							top="50px"
@@ -107,6 +142,16 @@ export function Showcase() {
 							transform="0"
 						/>
 						<Particle
+							as={motion.img}
+							animate={{
+								y: [0, -100, 0],
+								rotate: 360,
+								scale: [1, 0.9, 1],
+							}}
+							transition={{
+								duration: 15,
+								repeat: Infinity,
+							}}
 							src={BackgroundImg}
 							alt="particle"
 							bottom="110px"
