@@ -1,3 +1,8 @@
+//animação
+
+import { motion } from "framer-motion";
+import { fadeInTBottomVariant } from "../stylesTheme/Variants";
+
 // import global styles
 
 import {
@@ -18,17 +23,36 @@ import {
 export const Footer = () => {
 	return (
 		<PaddingContainer id="Contact" top="5%" bottom="10%">
-			<Heading align="center" as="h4" size="h4">
-				MY CONTACT
+			<Heading
+				align="center"
+				as={motion.h4}
+				variants={fadeInTBottomVariant}
+				initial="hidden"
+				whileInView={"visible"}
+				size="h4"
+			>
+				CONTATO
 			</Heading>
 
-			<Heading align="center" as="h2" size="h2">
-				Contact <BlueText>Me Here</BlueText>
+			<Heading
+				align="center"
+				as={motion.h2}
+				variants={fadeInTBottomVariant}
+				initial="hidden"
+				whileInView={"visible"}
+				size="h2"
+			>
+				Contate-me <BlueText>aqui</BlueText>
 			</Heading>
 
 			<PaddingContainer top="3rem">
 				<FlexContainer justify="center">
-					<ContactForm>
+					<ContactForm
+						as={motion.form}
+						variants={fadeInTBottomVariant}
+						initial="hidden"
+						whileInView={"visible"}
+					>
 						<PaddingContainer bottom="2rem">
 							<FormLabel>Name</FormLabel>
 							<FormInput

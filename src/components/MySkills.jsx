@@ -1,4 +1,9 @@
 /* eslint-disable react/jsx-key */
+// animação import
+import { motion } from "framer-motion";
+import { fadeInLeftVariant, fadeInRightVariant } from "../stylesTheme/Variants";
+
+//global styles
 import {
 	FlexContainer,
 	Heading,
@@ -30,7 +35,12 @@ export const MySkills = () => {
 				responsiveDirection="column-reverse"
 			>
 				{/* --left-section-- */}
-				<SkillsCardContainer>
+				<SkillsCardContainer
+					as={motion.div}
+					variants={fadeInLeftVariant}
+					initial={"hidden"}
+					whileInView={"visible"}
+				>
 					{Skills.map((skill) => (
 						<SkillsCard>
 							<LinkStyled>
@@ -47,7 +57,12 @@ export const MySkills = () => {
 				</SkillsCardContainer>
 
 				{/* --right section */}
-				<div>
+				<motion.div
+					as={motion.div}
+					variants={fadeInRightVariant}
+					initial={"hidden"}
+					whileInView={"visible"}
+				>
 					<Heading as="h4" size="h4">
 						Minhas Skills
 					</Heading>
@@ -60,12 +75,14 @@ export const MySkills = () => {
 						aplicar minhas habilidades em JavaScript e TypeScript para
 						contribuir com o desenvolvimento de software inovador e de alta
 						qualidade. Possuo conhecimento sólido de ambas as linguagens,
-						incluindo seus principais conceitos, frameworks e ferramentas. Sou
+						incluindo seus principais conceitos, frameworks e ferramentas.Também
+						estou familiarizado com o versionamento de código Git e GitHub, sou
 						um profissional dedicado, proativo e com grande capacidade de
-						aprendizado, além de ter forte interesse em trabalhar em equipe e
-						colaborar com outros desenvolvedores.
+						aprendizado e estou aberto a aprender novas linguagens além de ter
+						forte interesse em trabalhar em equipe e colaborar com outros
+						desenvolvedores.
 					</ParaText>
-				</div>
+				</motion.div>
 			</FlexContainer>
 		</PaddingContainer>
 	);

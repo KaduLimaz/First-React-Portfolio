@@ -10,6 +10,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { NavMenu } from "./layouts/NavMenu";
 //import state
 import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 //import navbar style
 import { theme } from "../stylesTheme/Theme";
@@ -51,6 +52,8 @@ export const Navbar = () => {
 
 						{/* --right-menu-icon-- */}
 						<MenuIcon
+							as={motion.a}
+							whileHover={{ scale: 1.4 }}
 							onClick={() => {
 								setOpenMenu(true);
 							}}
@@ -60,7 +63,9 @@ export const Navbar = () => {
 					</FlexContainer>
 				</Container>
 
-				{openMenu && <NavMenu setOpenMenu={setOpenMenu} />}
+				<AnimatePresence>
+					{openMenu && <NavMenu setOpenMenu={setOpenMenu} />}
+				</AnimatePresence>
 			</PaddingContainer>
 		</NavbarContainer>
 	);

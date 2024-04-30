@@ -9,6 +9,7 @@ import {
 	BlueText,
 	IconContainer,
 	LinkStyled,
+	ButtonCv,
 } from "../StyledComponents/Global.styled";
 //import react-icons
 import { BsLinkedin, BsInstagram, BsGithub, BsFacebook } from "react-icons/bs";
@@ -30,7 +31,7 @@ export function Showcase() {
 			id="Home"
 			left="0.5%"
 			right="10%"
-			top="15%"
+			top="18%"
 			bottom="10%"
 			responsiveLeft="1rem"
 			responsiveRight="1rem"
@@ -54,11 +55,10 @@ export function Showcase() {
 					</Heading>
 					<ParaText as="p" top="2rem" bottom="4rem">
 						Olá, meu nome é Kadu e sou um estudante Full Stack Developer,
-						cursando ADS e procuro minha primeira oportunidade de estágio. Olá,
-						meu nome é Kadu e sou um estudante Full Stack Developer, cursando
-						ADS e procuro minha primeira oportunidade de estágio. Olá, meu nome
-						é Kadu e sou um estudante Full Stack Developer, cursando ADS e
-						procuro minha primeira oportunidade de estágio.
+						cursando ADS Em busca da minha primeira oportunidade na área da
+						programação onde possa aplicar minhas habilidades. Possuo
+						conhecimento sólido nas linguagens mostradas nas minhas skills,
+						incluindo seus principais conceitos, frameworks e ferramentas.
 					</ParaText>
 					{/* social-icons */}
 					<FlexContainer gap="20px" responsiveFlex>
@@ -92,6 +92,13 @@ export function Showcase() {
 								<BsFacebook />
 							</LinkStyled>
 						</IconContainer>
+
+						<ButtonCv
+							href="https://docs.google.com/document/d/e/2PACX-1vTTU0VBP-bzry5GiWG2XhVbxbs4qtJAlR7elsPHLGU72Nmq0MqHuYGQpdlwE1mGXNgjAlIJV_90hB17/pub"
+							target="blank"
+						>
+							Meu Currículo
+						</ButtonCv>
 					</FlexContainer>
 				</motion.div>
 

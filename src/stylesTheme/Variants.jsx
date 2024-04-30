@@ -31,3 +31,63 @@ export const fadeInRightVariant = {
 		},
 	},
 };
+
+export const fadeInTopVariant = {
+	hidden: {
+		y: -50,
+		opacity: 0,
+	},
+
+	visible: {
+		y: 0,
+		opacity: 1,
+
+		transition: {
+			type: "tween",
+			duration: 1,
+		},
+	},
+};
+
+export const fadeInTBottomVariant = {
+	hidden: {
+		y: 50,
+		opacity: 0,
+	},
+
+	visible: {
+		y: 0,
+		opacity: 1,
+
+		transition: {
+			type: "tween",
+			duration: 1,
+		},
+	},
+};
+
+export const slideInLeft = {
+	hidden: {
+		x: "-100vh",
+		opacity: 0,
+	},
+
+	visible: {
+		x: 0,
+		opacity: 1,
+
+		transition: {
+			type: "tween",
+			duration: 0.5,
+		},
+	},
+
+	exit: {
+		x: "-100vh",
+		opacity: 0,
+		transition: {
+			type: "tween",
+			duration: 0.5,
+		},
+	},
+};

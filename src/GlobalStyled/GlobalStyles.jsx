@@ -16,5 +16,17 @@ html {
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #131c31;
+
+    
+}
+
+::-webkit-scrollbar-thumb {
+        background-image: linear-gradient(#7eadfc,#131c31);
+        border-radius: 10px;
+    }
+
 
 `;

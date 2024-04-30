@@ -1,3 +1,9 @@
+//animação
+
+import { motion } from "framer-motion";
+import { fadeInTopVariant } from "../stylesTheme/Variants";
+
+// global styles
 import {
 	Heading,
 	PaddingContainer,
@@ -16,11 +22,23 @@ export const MyProjects = () => {
 			responsiveLeft="1rem"
 			responsiveRight="1rem"
 		>
-			<Heading as="h4" size="h4">
-				MY PROJECTS
+			<Heading
+				as={motion.h4}
+				variants={fadeInTopVariant}
+				initial="hidden"
+				whileInView={"visible"}
+				size="h4"
+			>
+				Meus Projetos
 			</Heading>
-			<Heading as="h2" size="h2">
-				What <BlueText>I have built</BlueText>
+			<Heading
+				as={motion.h2}
+				variants={fadeInTopVariant}
+				initial="hidden"
+				whileInView={"visible"}
+				size="h2"
+			>
+				O que <BlueText>eu construí</BlueText>
 			</Heading>
 			{projectDetails.map((p) => (
 				<PaddingContainer key={p.id} top="5rem" bottom="5rem">

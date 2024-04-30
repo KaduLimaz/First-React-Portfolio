@@ -40,7 +40,7 @@ export const projectDetails = [
 		tech_stacks: ["JavaScript", "CSS", "HTML", "Axios"],
 		project_img: Project1,
 		project_url: "https://front-end-iii-ativiade-final.vercel.app/",
-		reverse: false,
+		reverse: true,
 	},
 ];
 
